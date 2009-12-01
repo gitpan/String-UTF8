@@ -1,0 +1,23 @@
+Changes
+inc/Module/Install.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
+lib/String/UTF8.pm
+lib/String/UTF8/PP.pm
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+README
+t/000_load.t
+t/005_import.t
+t/010_usage.t
+t/050_basic.t
+t/060_nonchar.t
+t/070_upgraded.t
+t/080_decoded.t
+t/lib/myconfig.pm

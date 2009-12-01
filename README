@@ -1,0 +1,93 @@
+String::UTF8(3)       User Contributed Perl Documentation      String::UTF8(3)
+
+
+
+NNAAMMEE
+       String::UTF8 − Determine whether a string consists of well−formed UTF−8
+       byte sequences
+
+SSYYNNOOPPSSIISS
+         use String::UTF8 qw[:all];
+
+         $boolean = is_utf8($string);
+         $boolean = is_utf8($string, UTF8_DISALLOW_NONCHARACTERS);
+
+DDEESSCCRRIIPPTTIIOONN
+       Determine whether a string consists of well‐formed UTF−8 byte
+       sequences.
+
+FFUUNNCCTTIIOONNSS
+       iiss__uuttff88
+
+       Determine whether $string consists of well‐formed UTF−8 byte sequences.
+
+       _U_s_a_g_e
+
+           $boolean = is_utf8($string);
+           $boolean = is_uft8($string, $flags);
+
+       _A_r_g_u_m_e_n_t_s
+
+       $string
+       $flags (optional)
+
+       _R_e_t_u_r_n_s
+
+       $boolean
+
+       _N_o_t_e
+
+       This function ignores Perl’s internal UTF−8 flag ("SVf_UTF8") and sim‐
+       ply checks the content of the string.
+
+CCOONNSSTTAANNTTSS
+       FFLLAAGGSS
+
+
+       UTF8_DISALLOW_NONCHARACTERS
+           If this flag is set, noncharacters is not considered well−formed.
+
+EEXXPPOORRTT
+       None by default. Functions and constants can either be imported indi‐
+       vidually or in sets grouped by tag names. The tag names are:
+
+       ":all" exports all functions and constants.
+
+DDIIAAGGNNOOSSTTIICCSS
+       ((FF)) Usage: %s
+           Subroutine %s invoked with wrong number of arguments.
+
+EENNVVIIRROONNMMEENNTT
+       Set the environment variable "STRING_UTF8_PP" to a true value before
+       loading this package to disable usage of XS implementation.
+
+PPRREERREEQQUUIISSIITTEESS
+       RRuunn‐‐TTiimmee
+
+
+       perl 5.006 or greater.
+       Carp, core module.
+       Exporter, core module.
+
+       BBuuiilldd‐‐TTiimmee
+
+       In addition to Run−Time:
+
+       Test::More 0.47 or greater, core module since 5.6.2.
+       Test::Exception.
+
+SSEEEE AALLSSOO
+       String::UTF8::XS
+
+AAUUTTHHOORR
+       Christian Hansen, <chansen@cpan.org>
+
+CCOOPPYYRRIIGGHHTT AANNDD LLIICCEENNSSEE
+       Copyright (C) 2009 by Christian Hansen
+
+       This library is free software; you can redistribute it and/or modify it
+       under the same terms as Perl itself.
+
+
+
+perl v5.8.9                       2009‐12‐01                   String::UTF8(3)
